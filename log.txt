@@ -1,3 +1,5 @@
+28573fa Task 2.4 : Split loop, extract two methods
+90dfc84 Task 2.3: update log.txt
 8599135 Task 2.3: Extract usd etc
 dea9a19 Task 2.2: update log.txt
 78ef55b Task 2.2: Extract getVolumeCredits,etc
