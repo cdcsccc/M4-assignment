@@ -1,3 +1,5 @@
+8599135 Task 2.3: Extract usd etc
+dea9a19 Task 2.2: update log.txt
 78ef55b Task 2.2: Extract getVolumeCredits,etc
 87ee7ea Task 2.1 :update log.txt
 ba371e7 Task 2.1: Extract getAmount and getPlay,etc
