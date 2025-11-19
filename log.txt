@@ -1,3 +1,4 @@
+ba371e7 Task 2.1: Extract getAmount and getPlay,etc
 02d538c Task 1.2:update log.txt
 408cf03 Task 1.1 :Fix Chenckstyle issue
 327d91e Initial commit
