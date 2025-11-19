@@ -1,2 +1,3 @@
-408cf03 (HEAD -> main) Task 1.1 :Fix Chenckstyle issue
-327d91e (origin/main, origin/HEAD) Initial commit
+02d538c Task 1.2:update log.txt
+408cf03 Task 1.1 :Fix Chenckstyle issue
+327d91e Initial commit
