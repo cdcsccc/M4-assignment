@@ -1,3 +1,5 @@
+78ef55b Task 2.2: Extract getVolumeCredits,etc
+87ee7ea Task 2.1 :update log.txt
 ba371e7 Task 2.1: Extract getAmount and getPlay,etc
 02d538c Task 1.2:update log.txt
 408cf03 Task 1.1 :Fix Chenckstyle issue
