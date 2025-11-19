@@ -31,17 +31,11 @@ public class StatementPrinter {
      */
     public String statement() {
 
-        int totalAmount = 0;
-        int volumeCredits = 0;
-
         final StringBuilder result =
                 new StringBuilder("Statement for " + invoice.getCustomer()
                         + System.lineSeparator());
 
         for (final Performance performance : invoice.getPerformances()) {
-
-            // Add volume credits
-            volumeCredits += getVolumeCredits(performance);
 
             // Print line for this performance
             result.append(String.format(
@@ -49,16 +43,33 @@ public class StatementPrinter {
                     getPlay(performance).getName(),
                     usd(getAmount(performance)),
                     performance.getAudience()));
-
-            totalAmount += getAmount(performance);
         }
 
         result.append(String.format(
-                "Amount owed is %s%n", usd(totalAmount)));
+                "Amount owed is %s%n", usd(getTotalAmount())));
         result.append(String.format(
-                "You earned %s credits%n", volumeCredits));
+                "You earned %s credits%n", getTotalVolumeCredits()));
 
         return result.toString();
+    }
+
+    private int getTotalAmount() {
+        int totalAmount = 0;
+        for (final Performance performance : invoice.getPerformances()) {
+
+            totalAmount += getAmount(performance);
+        }
+        return totalAmount;
+    }
+
+    private int getTotalVolumeCredits() {
+        int volumeCredits = 0;
+        for (final Performance performance : invoice.getPerformances()) {
+
+            // Add volume credits
+            volumeCredits += getVolumeCredits(performance);
+        }
+        return volumeCredits;
     }
 
     private String usd(int amount) {
